@@ -35,9 +35,9 @@ sudo yum update -y
 
 # 2. Apache & PHPインストール　（Amazon Linux 2）（ExtrasからPHPを有効化）
 
-sudo amazon-linux-extras enable php7.4
-sudo yum clean metadata
-sudo yum install -y php php-mysqlnd http
+sudo amazon-linux-extras enable php7.4\
+sudo yum clean metadata\
+sudo yum install -y php php-mysqlnd http\
 
 Amazon Linux 2023 の場合（dnf使用）
 
