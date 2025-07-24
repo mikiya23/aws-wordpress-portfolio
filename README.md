@@ -33,14 +33,14 @@ SSHでec2にログインしたら
 # 1. パッケージ更新
 sudo yum update -y
 
-# 2. Apache & PHPインストール（ExtrasからPHPを有効化）
+# 2. Apache & PHPインストール　（Amazon Linux 2）（ExtrasからPHPを有効化）
 sudo amazon-linux-extras enable php7.4
 sudo yum clean metadata
 sudo yum install -y php php-mysqlnd http
 
 Amazon Linux 2023 の場合（dnf使用）
 
-# 2. Apache & PHPインストール（Extrasは使わない）
+# 2. Apache & PHPインストール　（Amazon Linux 2023）　（Extrasは使わない）
 sudo dnf install -y httpd php php-mysqlnd php-fpm php-cli php-json php-common
 
 # 2.. Apache起動
