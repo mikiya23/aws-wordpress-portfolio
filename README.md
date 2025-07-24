@@ -3,13 +3,12 @@ AWS EC2, Apache, PHP, RDS, and WordPressを使った構成。CloudShellから構
 # AWS WordPress Portfolio
 
 ## 📌 構成図
-インターネット
-│
-[インターネットゲートウェイ]
-│
-[VPC]
-├── [パブリックサブネット]──[EC2（Apache+PHP）]
-└── [プライベートサブネット]──[RDS（MySQL）]
+インターネット\
+│\
+[インターネットゲートウェイ]\
+[VPC]\
+├── [パブリックサブネット]──[EC2（Apache+PHP）]\
+└── [プライベートサブネット]──[RDS（MySQL）]\
 
 
 ---
