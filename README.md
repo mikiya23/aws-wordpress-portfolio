@@ -54,6 +54,7 @@ cd /var/www/html
 sudo curl -O https://wordpress.org/latest.tar.gz
 sudo tar -xzf latest.tar.gz
 sudo cp -r wordpress/* .
+
 # 4. 権限設定
 sudo chown -R apache:apache /var/www/html
 
@@ -63,11 +64,15 @@ sudo vi wp-config.php
 
 wp-config.php の記述例（RDS接続部分）
 
-/** WordPressのためのデータベース設定 */
+```php
 define( 'DB_NAME', 'your_db_name' );
 define( 'DB_USER', 'your_db_user' );
 define( 'DB_PASSWORD', 'your_password' );
 define( 'DB_HOST', 'your-rds-endpoint.ap-northeast-1.rds.amazonaws.com' );
+```
+
+
+※ `DB_HOST` には、RDSのエンドポイントを入力（RDSの詳細画面からコピー）
 
 # 6. Apache再起動
 sudo systemctl restart httpd
