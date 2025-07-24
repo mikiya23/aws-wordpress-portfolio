@@ -26,17 +26,17 @@ AWS EC2, Apache, PHP, RDS, and WordPressを使った構成。CloudShellから構
 ### 7. Apache再起動して動作確認
 
 ---
+
+```bash
 SSHでec2にログインしたら
 
-
- コマンド例（Amazon Linux 2）(yum仕様)
 
 # 1. パッケージ更新
 sudo yum update -y
 
+Amazon Linux 2　の場合　(yum仕様)
 # 2. Apache & PHPインストール　（Amazon Linux 2）（ExtrasからPHPを有効化）
 
-```bash
 sudo amazon-linux-extras enable php7.4\
 sudo yum clean metadata\
 sudo yum install -y php php-mysqlnd http\
