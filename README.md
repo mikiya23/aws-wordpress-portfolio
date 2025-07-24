@@ -35,7 +35,8 @@ SSHでec2にログインしたら
 sudo yum update -y
 
 # 2. Apache & PHPインストール　（Amazon Linux 2）（ExtrasからPHPを有効化）
-bash'''
+
+'''bash
 sudo amazon-linux-extras enable php7.4\
 sudo yum clean metadata\
 sudo yum install -y php php-mysqlnd http\
